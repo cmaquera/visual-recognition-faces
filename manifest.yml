@@ -3,6 +3,6 @@ applications:
   memory: 128M
   instances: 1
   domain: mybluemix.net
-  name: project name
-  host: project name
+  name: visual recognition faces
+  host: visual-recognition-faces
   disk_quota: 1024M
