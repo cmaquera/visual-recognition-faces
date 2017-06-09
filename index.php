@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PHP Starter Application</title>
+	<title>Visual recognition Face</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="style.css" />
+	<link 
+	  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+ 	  rel="stylesheet" 
+	  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+	  crossorigin="anonymous">
+	<link rel="stylesheet" href="stylesheet.css" />
+	<script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+	<script 
+	  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+	  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+	  crossorigin="anonymous"></script>
+    <script src="jquery.ajax-progress.js"></script>
 </head>
+
 <body>
-	<table>
-		<tr>
-			<td style='width: 30%;'>
-				<img class = 'newappIcon' src='images/newapp-icon.png'>
-			</td>
-			<td>
-				<h1 id = "message"><?php echo "Hello World!"; ?></h1>
-				<p class='description'></p> Thanks for creating a <span class="blue">PHP Starter Application</span>.
-			</td>
-		</tr>
-	</table>
+    <div class="container">
+        <div class="row">
+            <div>
+                <canvas id="myCanvas"></canvas>
+            </div>
+            <div>
+        	    <img id="uploadPreview" />
+            </div>        
+            <div>
+                <input id="uploadImage" type="file" name="foto" onchange="PreviewImage();" />        
+                <button id="upload">Enviar</button>
+            </div>
+            <div>
+        	    <canvas id="faceCanvas" />
+            </div>
+            <div>
+        	    <img id="facePreview" />
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

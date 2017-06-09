@@ -1,0 +1,29 @@
+body {
+	margin: 0;	
+}
+
+#myCanvas {
+	width: 100%;
+	height: auto;
+}
+
+#uploadPreview{
+	width: 100%;
+	display: none;
+}
+
+@media (min-width: 1200px){
+	.container {
+	    width: 800px;
+	}
+}
+@media (min-width: 992px){
+	.container {
+	    width: 800px;
+	}
+}
+@media (min-width: 768px){
+	.container {
+	    width: 750px;
+	}
+}
