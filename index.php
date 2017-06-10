@@ -3,6 +3,10 @@
 <head>
 	<title>Visual recognition Face</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Aplicacion de reconocimiento de rostros conjunto a una clasificador de rostros" />
+	<meta name="keywords" content="aplicacion, recognition, reconocimiento, caras, faces, clasificador, rostros" />
+	<meta name="author" content="Cesar Maquera" />
 	<link 
 	  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
  	  rel="stylesheet" 
